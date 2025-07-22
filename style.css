@@ -1,6 +1,9 @@
 body{
-    background-color: aqua;
+    background-color: beige;
 }
 h1{
     color: blue;
+}
+p{
+    color: darkblue;
 }
