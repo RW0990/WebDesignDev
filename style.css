@@ -96,7 +96,7 @@ img{
     height: auto;
 }
 
-ul {
+.navbar ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -105,11 +105,11 @@ ul {
   border-radius: 15px;
 }
 
-li {
+.navbar li {
   float: left;
 }
 
-li a {
+.navbar li a {
   display: block;
   color: white;
   text-align: center;
@@ -127,3 +127,17 @@ a:hover:not(.active) {
   font-weight: bold;
 }
 
+.steps {
+		background-color: #9dc7d8;
+	width: 90%;
+	border: 5px solid #c0dce8;
+	background-color: #c0dce8;
+	width: 90%;
+	border: 5px solid #9dc7d8;
+  padding-top: 5px;
+	padding-bottom: 5px;
+	padding-right: 10px;
+	padding-left: 10px;
+	margin: 10px;
+	border-radius: 15px;
+}
