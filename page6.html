@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-  <!--Ryan White-->
-
   <head>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,20 +12,113 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Life Below Water page 6</title>
 
-    <link rel="stylesheet" href="style.css" />
-    <h1>Life Below Water part 6</h1>
+    <link rel="stylesheet" href="/Style/style.css" />
   </head>
 
   <body>
-	<div class="navbar">
-		<ul><!--Nav bar- Tara-->
-			<li><a href="index.html">Home</a></li>
-			<li><a href="page2.html">Causes</a></li>
-			<li><a href="page3.html">Water</a></li>
-			<li><a href="page4.html">Change</a></li>
-			<li><a href="page5.html">undefined</a></li>
-			<li><a class="active" href="page6.html">Quiz</a></li>
-		</ul>
-	</div>
+    <h1>Life Below Water</h1>
+    <div class="navbar">
+      <ul>
+        <!--Nav bar- Tara-->
+        <li><a href="index.html">Home</a></li>
+        <li><a href="page2.html">Causes</a></li>
+        <li><a href="page3.html">Water</a></li>
+        <li><a href="page4.html">Change</a></li>
+        <li><a href="page5.html">Solution</a></li>
+        <li><a class="active" href="page6.html">Quiz</a></li>
+      </ul>
+    </div>
+    <!-- Francesco La Pica Quiz -->
+    <div id="form">
+      <p>
+        We hope you discovered something new about how important the ocean is
+        for our planet and that you enjoyed this website.
+        <br />
+
+        Below you will find a small quiz to test if you actually read everything
+        or just pretend you did.
+        <br />
+        Please enter your name
+      </p>
+      <form onsubmit="showQuiz(event)">
+        <label id="nameForm" for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+        <br />
+        <button type="submit">Start the quiz</button>
+      </form>
+    </div>
+    <div id="quiz">
+      <table>
+        <tr>
+          <th>Question</th>
+          <th>Answer</th>
+        </tr>
+        <tr>
+          <td id="question1">
+            <span> What this goal is about?</span>
+            <ol>
+              <li>Ocean Life</li>
+              <li>Apple Stock</li>
+              <li>The best biscott in the world</li>
+            </ol>
+          </td>
+          <td>
+            <input type="text" id="answer1" placeholder="Insert answer (1-3)" />
+          </td>
+        </tr>
+        <tr>
+          <td id="question2">
+            <span>Why is the ocean important? </span>
+            <ol>
+              <li>It provide natural resources</li>
+              <li>For swimming</li>
+              <li>For taking amazing picture</li>
+            </ol>
+          </td>
+          <td>
+            <input type="text" id="answer2" placeholder="Insert answer (1-3)" />
+          </td>
+        </tr>
+        <tr>
+          <td id="question3">
+            <span> What we can do to our planet?</span>
+            <ol>
+              <li>Throw plastic in the ocean</li>
+              <li>Let cats control the world</li>
+              <li>Plant more trees</li>
+            </ol>
+          </td>
+          <td>
+            <input type="text" id="answer3" placeholder="Insert answer (1-3)" />
+          </td>
+        </tr>
+        <tr>
+          <td id="question4">
+            <span> Which country is the biggest Polluter?</span>
+            <ol>
+              <li>China</li>
+              <li>United States</li>
+              <li>Russia</li>
+            </ol>
+          </td>
+          <td>
+            <input type="text" id="answer4" placeholder="Insert answer (1-3)" />
+          </td>
+        </tr>
+      </table>
+
+      <button onclick="valueQuiz()">Click here for value</button>
+    </div>
+
+    <span id="result"></span>
+    <script src="/JS/script.js"></script>
   </body>
+  <footer>
+    <p>
+      This website was created by Ryan White, Tara O'Connor and Francesco La
+      Pica.<br />
+
+      We are not responsible for the content of external internet sites.
+    </p>
+  </footer>
 </html>
