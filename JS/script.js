@@ -1,24 +1,8 @@
-function createBuggle() {
-  const section = document.querySelector("section");
-  const createElement = document.createElement("span");
-  var size = Math.random() * 60;
-
-  createElement.style.width = size + "px";
-  createElement.style.height = size + "px";
-  createElement.style.left = Math.random() * innerWidth + "px";
-  section.appendChild(createElement);
-  setTimeout(() => {
-    createElement.remove();
-  }, 4000);
-}
-
-setInterval(createBuggle, 50);
-
 function showQuiz(event) {
   event.preventDefault();
   document.getElementById("quiz").style.display = "block";
 
-  document.getElementById("userForm").style.display = "none";
+  document.getElementById("form").style.display = "none";
 }
 
 function valueQuiz() {
@@ -36,28 +20,28 @@ function valueQuiz() {
 
   var result = 0;
 
-  if (q1Answer == "") {
+  if (q1Answer == "1") {
     row1.style.backgroundColor = "green";
     result++;
   } else {
     row1.style.backgroundColor = "red";
   }
 
-  if (q2Answer == "") {
+  if (q2Answer == "1") {
     row2.style.backgroundColor = "green";
     result++;
   } else {
     row2.style.backgroundColor = "red";
   }
 
-  if (q3Answer == "") {
+  if (q3Answer == "3") {
     row3.style.backgroundColor = "green";
     result++;
   } else {
     row3.style.backgroundColor = "red";
   }
 
-  if (q4Answer == "") {
+  if (q4Answer == "1") {
     row4.style.backgroundColor = "green";
     result++;
   } else {
@@ -65,5 +49,5 @@ function valueQuiz() {
   }
 
   document.getElementById("result").innerText =
-    "You did " + result + " " + userName;
+    "Congratulation " + userName + " you got " + result + " correct answers";
 }
