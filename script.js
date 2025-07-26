@@ -13,3 +13,4 @@ function createBuggle() {
 }
 
 setInterval(createBuggle, 50);
+
