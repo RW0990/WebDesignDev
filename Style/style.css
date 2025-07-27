@@ -185,9 +185,6 @@ img {
 /* main website css end */
 
 /* navbar css*/
-.navbar {
-  
-}
 .navbar ul {
   list-style-type: none;
   margin: 0;
@@ -264,3 +261,6 @@ a:hover:not(.active) {
   border-radius: 15px;
 }
 
+footer {
+  font-size: small;
+}
