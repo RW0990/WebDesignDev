@@ -1,10 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+<<<<<<< HEAD
 <!--Ryan White-->
 
 <head>
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+=======
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+>>>>>>> main
 
   <!-- import fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -13,6 +23,7 @@
     href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet" />
 
+<<<<<<< HEAD
   <!-- symbol/character support -->
   <meta charset="UTF-8" />
   <!-- device size support -->
@@ -39,3 +50,115 @@
 </body>
 
 </html>
+=======
+    <link rel="stylesheet" href="/Style/style.css" />
+  </head>
+
+  <body>
+    <h1>Life Below Water</h1>
+    <div class="navbar">
+      <ul>
+        <!--Nav bar- Tara-->
+        <li><a href="index.html">Home</a></li>
+        <li><a href="page2.html">Causes</a></li>
+        <li><a href="page3.html">Water</a></li>
+        <li><a href="page4.html">Change</a></li>
+        <li><a href="page5.html">Solution</a></li>
+        <li><a class="active" href="page6.html">Quiz</a></li>
+      </ul>
+    </div>
+    <!-- Francesco La Pica Quiz -->
+    <div id="form">
+      <p>
+        We hope you discovered something new about how important the ocean is
+        for our planet and that you enjoyed this website.
+        <br />
+
+        Below you will find a small quiz to test if you actually read everything
+        or just pretend you did.
+        <br />
+        Please enter your name
+      </p>
+      <form onsubmit="showQuiz(event)">
+        <label id="nameForm" for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+        <br />
+        <button type="submit">Start the quiz</button>
+      </form>
+    </div>
+    <div id="quiz">
+      <table>
+        <tr>
+          <th>Question</th>
+          <th>Answer</th>
+        </tr>
+        <tr>
+          <td id="question1">
+            <span> What this goal is about?</span>
+            <ol>
+              <li>Ocean Life</li>
+              <li>Apple Stock</li>
+              <li>The best biscott in the world</li>
+            </ol>
+          </td>
+          <td>
+            <input type="text" id="answer1" placeholder="Insert answer (1-3)" />
+          </td>
+        </tr>
+        <tr>
+          <td id="question2">
+            <span>Why is the ocean important? </span>
+            <ol>
+              <li>It provide natural resources</li>
+              <li>For swimming</li>
+              <li>For taking amazing picture</li>
+            </ol>
+          </td>
+          <td>
+            <input type="text" id="answer2" placeholder="Insert answer (1-3)" />
+          </td>
+        </tr>
+        <tr>
+          <td id="question3">
+            <span> What we can do to our planet?</span>
+            <ol>
+              <li>Throw plastic in the ocean</li>
+              <li>Let cats control the world</li>
+              <li>Plant more trees</li>
+            </ol>
+          </td>
+          <td>
+            <input type="text" id="answer3" placeholder="Insert answer (1-3)" />
+          </td>
+        </tr>
+        <tr>
+          <td id="question4">
+            <span> Which country is the biggest Polluter?</span>
+            <ol>
+              <li>China</li>
+              <li>United States</li>
+              <li>Russia</li>
+            </ol>
+          </td>
+          <td>
+            <input type="text" id="answer4" placeholder="Insert answer (1-3)" />
+          </td>
+        </tr>
+      </table>
+
+      <button onclick="valueQuiz()">Click here for value</button>
+    </div>
+
+    <span id="result"></span>
+    <script src="/JS/script.js"></script>
+  </body>
+  <footer>
+    <p>
+      This website was created by Ryan White, Tara O'Connor and Francesco La
+      Pica.<br />
+
+      We are not responsible for the content of external internet sites.
+    </p>
+  </footer>
+</html>
+>>>>>>> main
