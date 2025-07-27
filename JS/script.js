@@ -1,3 +1,4 @@
+//francesco quiz
 function showQuiz(event) {
   event.preventDefault();
   document.getElementById("quiz").style.display = "block";
@@ -49,5 +50,31 @@ function valueQuiz() {
   }
 
   document.getElementById("result").innerText =
-    "Congratulation " + userName + " you got " + result + " correct answers";
+    "Congratulations " + userName + ", you got " + result + " answers correct";
+  document.getElementById("quizResult").style.display = "block"; //make results div appear once result is given
 }
+//francesco quiz end
+
+
+//francesco bubbles
+
+function createBuggle() {
+  const section = document.querySelector("section");
+  if (!section) { //this prevents errors and stops the quiz from breaking if no <secion> is found
+   return;
+  }
+  const createElement = document.createElement("span");
+  var size = Math.random() * 60;
+
+  createElement.style.width = size + "px";
+  createElement.style.height = size + "px";
+  createElement.style.left = Math.random() * innerWidth + "px";
+  section.appendChild(createElement);
+  setTimeout(() => {
+    createElement.remove();
+  }, 4000);
+}
+
+setInterval(createBuggle, 50);
+//francesco bubbles end
+
