@@ -108,7 +108,7 @@ function resetTip() {
 
 //Tara JS Page 4 end
 
-//Tara JS Page 5
+//Tara JS Page 3
 function whatAnimal() {
   //show div containing result
   document.getElementById("animalResult").style.display = "block";
@@ -155,5 +155,5 @@ function resetAnimal() {
   /*hiding the div containing the empty tip*/
   document.getElementById("animalResult").style.display = "none";
 }
-//Tara JS Page 5 end 
+//Tara JS Page 3 end 
 

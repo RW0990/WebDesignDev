@@ -248,16 +248,17 @@ a:hover:not(.active) {
   border-radius: 15px;
 }
 
-footer {
-  font-size: small;
+.footer {
+  font-size: 0.9rem;
 }
 
 /*Tara CSS Page 4 */
 
 #tipText{ /*click here for...*/
+  border: 2px solid #116689;
+  background-color: #9dc7d8;
   font-weight: bold;
   font-size: x-large;
-  border: 3px solid white;
   width: fit-content;
 }
 
@@ -266,12 +267,13 @@ footer {
   font-size: large;
   font-weight: bold;
   width: fit-content;
+  border: 2px solid #116689;
+  background-color: #9dc7d8;
 }
 
 #plasticTip{
   display: none;
-  font-style: italic;
-  font-size: x-large;
+  
 }
 /* plastic tip and tricks button*/
 .plasticTipButton {
