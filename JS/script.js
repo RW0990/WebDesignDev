@@ -55,46 +55,38 @@ function valueQuiz() {
 }
 //francesco quiz end
 
-
-//francesco bubbles
-
-function createBuggle() {
-  const section = document.querySelector("section");
-  if (!section) { //this prevents errors and stops the quiz from breaking if no <secion> is found
-   return;
-  }
-  const createElement = document.createElement("span");
-  var size = Math.random() * 60;
-
-  createElement.style.width = size + "px";
-  createElement.style.height = size + "px";
-  createElement.style.left = Math.random() * innerWidth + "px";
-  section.appendChild(createElement);
-  setTimeout(() => {
-    createElement.remove();
-  }, 4000);
+//Francesco JS page 5
+function showMeMessage() {
+  var message = [
+    "everything that we do count , so please help the enviroment and recycle",
+    "Help us save all the life in the ocean",
+    "Don't let the ocean die",
+  ];
+  var random = Math.floor(Math.random() * message.length);
+  document.getElementById("motivationalMessage").innerText = message[random];
 }
-
-setInterval(createBuggle, 50);
-//francesco bubbles end
-
 
 //Tara JS page 4
 
 function showTip() {
-  
   /*show div containing tip*/
   document.getElementById("plasticTip").style.display = "block";
 
   /*array of contants (tips for plastic sustainibility)*/
   const plasticTips = [
-    "Use a reusable water bottle or coffee mug", "Reuse shopping bags, invest in a tote bag or any other reusable bag", "Use paper or metal straws", "Avoid products with individual wrapping", "Recycle correctly", "Upcycle by turning old containers into something new", "Purchase products with plastic free wrapping where possible"  
-  ]
+    "Use a reusable water bottle or coffee mug",
+    "Reuse shopping bags, invest in a tote bag or any other reusable bag",
+    "Use paper or metal straws",
+    "Avoid products with individual wrapping",
+    "Recycle correctly",
+    "Upcycle by turning old containers into something new",
+    "Purchase products with plastic free wrapping where possible",
+  ];
 
   /*choose a random fact and assign it to randomTip*/
-  var randomTip = Math.floor(Math.random()* plasticTips.length);
+  var randomTip = Math.floor(Math.random() * plasticTips.length);
   /*set the text content of randomTipShow to the randomly chosen tip from list of plasticTips*/
-  document.getElementById("randomTipShow").textContent=plasticTips[randomTip];
+  document.getElementById("randomTipShow").textContent = plasticTips[randomTip];
 }
 
 function resetTip() {
@@ -103,7 +95,7 @@ function resetTip() {
   /*hiding the div containing the empty tip*/
   document.getElementById("plasticTip").style.display = "none";
   /*ramdomising the tip again after reset to avoid duplicate tips */
-  var randomTip = Math.floor(Math.random()* plasticTips.length);
+  var randomTip = Math.floor(Math.random() * plasticTips.length);
 }
 
 //Tara JS Page 4 end.
@@ -113,13 +105,14 @@ function whatAnimal() {
   //show div containing result
   document.getElementById("animalResult").style.display = "block";
   //save checked colour/animal button as constant called colour/animal
-  const colour=document.querySelector('input[name="colour"]:checked');
-  const passtime=document.querySelector('input[name="passtime"]:checked');
+  const colour = document.querySelector('input[name="colour"]:checked');
+  const passtime = document.querySelector('input[name="passtime"]:checked');
 
-  const myAnimal=document.getElementById("animalResult");
+  const myAnimal = document.getElementById("animalResult");
 
-  if(!colour|| !passtime){ //if one or both answers empty
-    myAnimal.innerHTML="Please answer both of the questions and try again";
+  if (!colour || !passtime) {
+    //if one or both answers empty
+    myAnimal.innerHTML = "Please answer both of the questions and try again";
     return; //exit funtion early if no answers selected
   }
 
@@ -128,25 +121,26 @@ function whatAnimal() {
   let resultText = ""; //maybe change name
 
   if (colourSelected === "blue" && passtimeSelected === "beach") {
-    resultText = "<strong>You are a Dolphin!</strong><br>Dolphins are friendly creatures but they risk entrapment in nets!";
-    
+    resultText =
+      "<strong>You are a Dolphin!</strong><br>Dolphins are friendly creatures but they risk entrapment in nets!";
   } else if (colourSelected === "red" && passtimeSelected === "forest") {
-    resultText = "<strong>You are an Octopus!</strong><br>Smart creatures with three hearts, but are vulnerable to habitat destruction";
-
+    resultText =
+      "<strong>You are an Octopus!</strong><br>Smart creatures with three hearts, but are vulnerable to habitat destruction";
   } else if (colourSelected === "green" && passtimeSelected === "book") {
-    resultText = "<strong>You are Coral!</strong><br>Pretty and colourful, Corals are being bleached by acidic waters!";
-
+    resultText =
+      "<strong>You are Coral!</strong><br>Pretty and colourful, Corals are being bleached by acidic waters!";
   } else if (colourSelected === "yellow" && passtimeSelected === "games") {
-    resultText = "<strong>You are a Pufferfish!</strong><br> Puffy and spikey, but affected by plastic and toxic waste in the oceans.";
-
+    resultText =
+      "<strong>You are a Pufferfish!</strong><br> Puffy and spikey, but affected by plastic and toxic waste in the oceans.";
   } else if (colourSelected === "pink" && passtimeSelected === "code") {
-    resultText = "<strong>You are a Shrimp!</strong><br>Small creatures that help keep the ocean clean, they're suffering in warmer waters";
-
+    resultText =
+      "<strong>You are a Shrimp!</strong><br>Small creatures that help keep the ocean clean, they're suffering in warmer waters";
   } else {
-    resultText = "<strong>You are a Fish!</strong><br>They just keep swimming, but they face threats from microplastics and overfishing";
+    resultText =
+      "<strong>You are a Fish!</strong><br>They just keep swimming, but they face threats from microplastics and overfishing";
   }
 
-  myAnimal.innerHTML=resultText;
+  myAnimal.innerHTML = resultText;
 }
 
 function resetAnimal() {
@@ -155,5 +149,4 @@ function resetAnimal() {
   /*hiding the div containing the empty tip*/
   document.getElementById("animalResult").style.display = "none";
 }
-//Tara JS Page 3 end 
-
+//Tara JS Page 3 end
