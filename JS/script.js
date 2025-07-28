@@ -119,7 +119,7 @@ function whatAnimal() {
   const myAnimal=document.getElementById("animalResult");
 
   if(!colour|| !passtime){ //if one or both answers empty
-    myAnimal.innerHTML="Please answer both of the questions";
+    myAnimal.innerHTML="Please answer both of the questions and try again";
     return; //exit funtion early if no answers selected
   }
 
@@ -149,5 +149,11 @@ function whatAnimal() {
   myAnimal.innerHTML=resultText;
 }
 
+function resetAnimal() {
+  /*set the text content of randomTipShow to nothing resetting the button and deleting the tip*/
+  document.getElementById("animalResult").innerHTML = "";
+  /*hiding the div containing the empty tip*/
+  document.getElementById("animalResult").style.display = "none";
+}
 //Tara JS Page 5 end 
 

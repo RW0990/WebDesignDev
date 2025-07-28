@@ -248,25 +248,12 @@ a:hover:not(.active) {
   border-radius: 15px;
 }
 
-/* beach pollution image-Water page css*/
-#pollution {
-  text-align: center;
-  background-color: #c0dce8;
-  width: 90%;
-  border: 5px solid #9dc7d8;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-right: 5px;
-  padding-left: 5px;
-  margin: 10px;
-  border-radius: 15px;
-}
-
 footer {
   font-size: small;
 }
 
 /*Tara CSS Page 4 */
+
 #tipText{ /*click here for...*/
   font-weight: bold;
   font-size: x-large;
@@ -286,7 +273,7 @@ footer {
   font-style: italic;
   font-size: x-large;
 }
-
+/* plastic tip and tricks button*/
 .plasticTipButton {
   font-size: larger;
   width: 15%;
@@ -297,7 +284,9 @@ footer {
   padding-left: 10px;
   margin: 10px;
   border-radius: 15px;
+  cursor: pointer;
 }
+/* plastic tip and tricks reset button*/
  .resetTipButton{
   font-size: larger;
   width: 15%;
@@ -308,20 +297,39 @@ footer {
   padding-left: 10px;
   margin: 10px;
   border-radius: 15px;
+  cursor: pointer;
  }
-
+/* plastic tip and tricks button hover*/
  .plasticTipButton:hover {
   background-color: #a3d5ff; /* change colour when hover mouse */
   color: black; /* change font colour */
   font-weight: bold; /* set font to bold */
+  cursor: pointer;
 }
-
+/* plastic tip and tricks reset button hover*/
 .resetTipButton:hover {
   background-color: #ffb3b3; 
   color: darkred;
   font-weight: bold;
+  cursor: pointer;
 }
 
+/* Tara Page 3 CSS */
+
+/* beach pollution image-Water page css*/
+#pollution {
+  text-align: center;
+  background-color: #c0dce8;
+  width: 90%;
+  border: 5px solid #9dc7d8;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 5px;
+  padding-left: 5px;
+  margin: 10px;
+  border-radius: 15px;
+}
+/* users assigned animal based on their choices*/
 #animalResult {
   color: white;
   display: none;
@@ -332,17 +340,48 @@ footer {
   border-radius: 15px;
   background-color: #116689;
   padding: 10px;
+  margin-bottom: 10px;
 }
+/* what is your favourite colour/passtime question box*/
 .animalQuestions{
-  
   border: 2px solid #116689;
   background-color: #9dc7d8;
   width: 40%;
   padding-left: 10px;
   padding-right: 10px;
 }
-
+/* radio button options*/
 .btnQuestion{
   list-style-position: inside;
   margin: 3px;
+  cursor: pointer;
 }
+
+/* what ocean animal are you button */
+#whatAnimals {
+  border: 2px solid #9dc7d8;
+  background-color: #116689;
+  cursor: pointer;
+}
+/* what ocean animal are you button hover*/
+#whatAnimals:hover {
+  color: black;
+  background-color: #9dc7d8;
+  border: 2px solid #116689;
+  cursor: pointer;
+  font-weight: bold;
+}
+/* what ocean animal are you reset button */
+#resetAnimals {
+  border: 2px solid #9dc7d8;
+  background-color: #116689;
+  cursor: pointer;
+}
+/* what ocean animal are you reset button hovering */
+#resetAnimals:hover {
+  color: black;
+  background-color: #9dc7d8;
+  border: 2px solid #116689;
+  cursor: pointer;
+  font-weight: bold;
+ }
