@@ -176,6 +176,7 @@ p {
   padding-left: 10px;
   margin: 10px;
   border-radius: 15px;
+  font-size: 18px;
 }
 
 img {
@@ -263,4 +264,60 @@ a:hover:not(.active) {
 
 footer {
   font-size: small;
+}
+
+/*Tara CSS Page 4 */
+#tipText{ /*click here for...*/
+  font-weight: bold;
+  font-size: x-large;
+  border: 3px solid white;
+  width: fit-content;
+}
+
+#randomTipShow{
+  border: 3px solid white;
+  font-size: large;
+  font-weight: bold;
+  width: fit-content;
+}
+
+#plasticTip{
+  display: none;
+  font-style: italic;
+  font-size: x-large;
+}
+
+.plasticTipButton {
+  font-size: larger;
+  width: 15%;
+  border: 3px solid white;
+  padding-top: 10x;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin: 10px;
+  border-radius: 15px;
+}
+ .resetTipButton{
+  font-size: larger;
+  width: 15%;
+  border: 2px solid white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin: 10px;
+  border-radius: 15px;
+ }
+
+ .plasticTipButton:hover {
+  background-color: #a3d5ff; /* change colour when hover mouse */
+  color: black; /* change font colour */
+  font-weight: bold; /* set font to bold */
+}
+
+.resetTipButton:hover {
+  background-color: #ffb3b3; 
+  color: darkred;
+  font-weight: bold;
 }

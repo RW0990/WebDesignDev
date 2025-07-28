@@ -78,3 +78,29 @@ function createBuggle() {
 setInterval(createBuggle, 50);
 //francesco bubbles end
 
+
+//Tara JS
+function showTip() {
+  
+  /*show div containing tip*/
+  document.getElementById("plasticTip").style.display = "block";
+
+  /*array of contants (tips for plastic sustainibility)*/
+  const plasticTips = [
+    "Use a reusable water bottle or coffee mug", "Reuse shopping bags, invest in a tote bag or any other reusable bag", "Use paper or metal straws", "Avoid products with individual wrapping", "Recycle correctly", "Upcycle by turning old containers into something new", "Purchase products with plastic free wrapping where possible"  
+  ]
+
+  /*choose a random fact and assign it to randomTip*/
+  var randomTip = Math.floor(Math.random()* plasticTips.length);
+  /*set the text content of randomTipShow to the randomly chosen tip from list of plasticTips*/
+  document.getElementById("randomTipShow").textContent=plasticTips[randomTip];
+}
+
+function resetTip() {
+  /*set the text content of randomTipShow to nothing resetting the button and deleting the tip*/
+  document.getElementById("randomTipShow").textContent = "";
+  /*hiding the div containing the empty tip*/
+  document.getElementById("plasticTip").style.display = "none";
+  /*ramdomising the tip again after reset to avoid duplicate tips */
+  var randomTip = Math.floor(Math.random()* plasticTips.length);
+}
