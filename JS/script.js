@@ -79,7 +79,8 @@ setInterval(createBuggle, 50);
 //francesco bubbles end
 
 
-//Tara JS
+//Tara JS page 4
+
 function showTip() {
   
   /*show div containing tip*/
@@ -104,3 +105,49 @@ function resetTip() {
   /*ramdomising the tip again after reset to avoid duplicate tips */
   var randomTip = Math.floor(Math.random()* plasticTips.length);
 }
+
+//Tara JS Page 4 end
+
+//Tara JS Page 5
+function whatAnimal() {
+  //show div containing result
+  document.getElementById("animalResult").style.display = "block";
+  //save checked colour/animal button as constant called colour/animal
+  const colour=document.querySelector('input[name="colour"]:checked');
+  const passtime=document.querySelector('input[name="passtime"]:checked');
+
+  const myAnimal=document.getElementById("animalResult");
+
+  if(!colour|| !passtime){ //if one or both answers empty
+    myAnimal.innerHTML="Please answer both of the questions";
+    return; //exit funtion early if no answers selected
+  }
+
+  const colourSelected = colour.value;
+  const passtimeSelected = passtime.value;
+  let resultText = ""; //maybe change name
+
+  if (colourSelected === "blue" && passtimeSelected === "beach") {
+    resultText = "<strong>You are a Dolphin!</strong><br>Dolphins are friendly creatures but they risk entrapment in nets!";
+    
+  } else if (colourSelected === "red" && passtimeSelected === "forest") {
+    resultText = "<strong>You are an Octopus!</strong><br>Smart creatures with three hearts, but are vulnerable to habitat destruction";
+
+  } else if (colourSelected === "green" && passtimeSelected === "book") {
+    resultText = "<strong>You are Coral!</strong><br>Pretty and colourful, Corals are being bleached by acidic waters!";
+
+  } else if (colourSelected === "yellow" && passtimeSelected === "games") {
+    resultText = "<strong>You are a Pufferfish!</strong><br> Puffy and spikey, but affected by plastic and toxic waste in the oceans.";
+
+  } else if (colourSelected === "pink" && passtimeSelected === "code") {
+    resultText = "<strong>You are a Shrimp!</strong><br>Small creatures that help keep the ocean clean, they're suffering in warmer waters";
+
+  } else {
+    resultText = "<strong>You are a Fish!</strong><br>They just keep swimming, but they face threats from microplastics and overfishing";
+  }
+
+  myAnimal.innerHTML=resultText;
+}
+
+//Tara JS Page 5 end 
+

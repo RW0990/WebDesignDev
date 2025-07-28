@@ -321,3 +321,28 @@ footer {
   color: darkred;
   font-weight: bold;
 }
+
+#animalResult {
+  color: white;
+  display: none;
+  font-style: italic;
+  border: 3px solid white;
+  font-size: large;
+  width: fit-content;
+  border-radius: 15px;
+  background-color: #116689;
+  padding: 10px;
+}
+.animalQuestions{
+  
+  border: 2px solid #116689;
+  background-color: #9dc7d8;
+  width: 40%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.btnQuestion{
+  list-style-position: inside;
+  margin: 3px;
+}
