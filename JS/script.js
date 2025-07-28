@@ -106,7 +106,7 @@ function resetTip() {
   var randomTip = Math.floor(Math.random()* plasticTips.length);
 }
 
-//Tara JS Page 4 end
+//Tara JS Page 4 end.
 
 //Tara JS Page 3
 function whatAnimal() {

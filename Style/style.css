@@ -317,8 +317,13 @@ a:hover:not(.active) {
 }
 
 /* Tara Page 3 CSS */
+/* When accordion is closed */
+.accordion-button.collapsed {
+  background-color: white;
+  color: #116689;
+}
 
-/* beach pollution image-Water page css*/
+/* beach pollution image-css*/
 #pollution {
   text-align: center;
   background-color: #c0dce8;
