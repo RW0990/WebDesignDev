@@ -5,13 +5,14 @@
   <head>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
+    <!-- Bootstrap js for accordion functionality -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
     <!-- import fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
-    <!-- script use-->
-    <script src="JS/script.js"></script>
+
     <!-- symbol/character support -->
     <meta charset="UTF-8" />
     <!-- device size support -->
@@ -44,9 +45,7 @@
     <p>
       "Every year an estimated 5 to 12 million metric tons of plastic enter the ocean" a statistic taken from <a href="https://www.un.org/sustainabledevelopment/goal-14-life-below-water/">this link</a> is shocking. Can we imagine that much plastic floating in the air we breathe? Its difficult to comprehend the extent of how far we have gone to destroy our own planet.
     </p>
-    <!-- Bootstrap js for accordion functionality -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    
+   
     <!-- Bootstrap accordion -->
     <div class="marineLife">
       <div class="accordion" id="accordionExample">
@@ -97,6 +96,7 @@
       <h4>Answer these questions to find out!</h4>
       <hr>
       <p class="animalQuestions">What is your favourite colour?</p>
+      <!-- Radio buttons for mini quiz selection-->
       <label class="btnQuestion"><input type="radio" name="colour" value="blue"> Blue</label><br>
       <label class="btnQuestion"><input type="radio" name="colour" value="red"> Red</label><br>
       <label class="btnQuestion"><input type="radio" name="colour" value="green"> Green</label><br>
@@ -110,18 +110,27 @@
       <label class="btnQuestion"><input type="radio" name="passtime" value="book"> Reading a book</label><br>
       <label class="btnQuestion"><input type="radio" name="passtime" value="code"> Coding something new</label><br>
       <hr>
+      <!--buttons to run JavaScript-->
       <button id="whatAnimals" onclick="whatAnimal()">Find out my animal!</button>
       <button id="resetAnimals" onclick="resetAnimal()">Reset</button>
       <hr>
+      <!--div to store result-->
       <div id="animalResult"></div>
       
     </div>
-
+    <!--bootstrap grid for photos-->
     <div id="pollution">
-      <img src="Images/seapollution.jpg" alt="Photo by Lucien Wanda from Pexels: https://www.pexels.com/photo/piles-of-garbage-by-the-shore-2827735/">
-      <br>
-      Image of plastic and waste pollution on a beach.
+      <div class="container">
+        <div class="row">
+         <div class="col"><img src="Images/seapollution.jpg" alt="Photo by Lucien Wanda from Pexels: https://www.pexels.com/photo/piles-of-garbage-by-the-shore-2827735/"></div>
+         <div class="col"><img src="Images/PortPollute.jpg" alt="https://unsplash.com/photos/blue-and-white-boat-on-water-under-white-clouds-and-blue-sky-during-daytime-dpQEOIoxeWg"></div>
+        <div class="w-100"></div>
+          <div class="col"><img src="Images/PlasticInFish.jpg" alt="https://unsplash.com/photos/person-in-white-gloves-holding-red-tomato-fruit-40o8lXsMlcU"></div>
+          <div class="col"><img src="Images/PlasticWater.jpg" alt="https://unsplash.com/photos/white-and-brown-duck-on-water-betJpW6fuoY"></div>
+        </div>
+      </div>
     </div>
+
     <h4>Lets Do Something About This!</h4>
     <footer>
       <p class="footer">
@@ -130,6 +139,8 @@
     		We are not responsible for the content of external internet sites.
 	    </p>
     </footer>
+    <!--own java script-Last so html content loads first-->
+    <script src="JS/script.js"></script>
   </body>
 
 </html>
