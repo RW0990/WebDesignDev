@@ -3,18 +3,15 @@
 <html lang="en">
   <head>
     <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <!-- Bootstrap script (for carousel functionality) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 
     <!-- import fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
 
     <!-- symbol/character support -->
     <meta charset="UTF-8" />
@@ -70,89 +67,45 @@
       important. The worlds biggest economies are the biggest polluters. This
       needs to change. As you can see from this graph of the biggest polluters
       according to Worldometer:
-      <a
-        href="https://www.worldometers.info/co2-emissions/co2-emissions-by-country/"
-        >Link</a
-      >
+      <a href="https://www.worldometers.info/co2-emissions/co2-emissions-by-country/">Link</a>
     </p>
-    <br />
-    <!-- Bootstrap script (for carousel functionality) -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
+    <br>
+    
     <!-- Bootstrap image carousel-->
     <div class="carousel-size">
       <div id="carouselExampleCaptions" class="carousel slide">
         <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img
-              src="Images/CO2by%.png"
-              class="d-block w-100"
-              alt="CO2 emissions by %"
-            />
+            <img src="Images/CO2by%.png" class="d-block w-100" alt="CO2 emissions by %"/>
             <div class="carousel-caption d-none d-md-block">
               <h5></h5>
               <p>Top 5 countries with most CO2 emmissions as a percentage</p>
             </div>
           </div>
           <div class="carousel-item">
-            <img
-              src="Images/CO2byPop.png"
-              class="d-block w-100"
-              alt="CO2 emissions by population"
-            />
+            <img src="Images/CO2byPop.png" class="d-block w-100" alt="CO2 emissions by population"/>
             <div class="carousel-caption d-none d-md-block">
               <h5></h5>
               <p>Top 5 countries with most CO2 emmissions by population</p>
             </div>
           </div>
           <div class="carousel-item">
-            <img
-              src="Images/plasticFish.jpg"
-              class="d-block w-100"
-              alt="Fsh and water pollution: https://pixabay.com/illustrations/plastic-waste-ocean-pollution-7617451"
-            />
+            <img src="Images/plasticFish.jpg" class="d-block w-100" alt="Fsh and water pollution: https://pixabay.com/illustrations/plastic-waste-ocean-pollution-7617451"/>
             <div class="carousel-caption d-none d-md-block">
               <p>Plastic pollution amongst marine life</p>
             </div>
           </div>
         </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="prev"
-        >
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="next"
-        >
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
@@ -171,7 +124,7 @@
         <p id="randomTipShow"></p>
       </div>
     </div>
-    <br /><br />
+    <br><br>
     <footer>
       <p class="footer">
         This website was created by Ryan White, Tara Johnson-Slevin and
@@ -180,6 +133,7 @@
         We are not responsible for the content of external internet sites.
       </p>
     </footer>
+    <!--own java script-Last so html content loads first-->
     <script src="JS/script.js"></script>
   </body>
 </html>
