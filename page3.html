@@ -51,7 +51,7 @@
       <div class="accordion" id="accordionExample">
         <div class="accordion-item">
           <h2 class="accordion-header">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
               <strong>MARINE ANIMALS</strong>
             </button>
           </h2>
@@ -95,20 +95,22 @@
       <h3>What ocean animal are you?</h3>
       <h4>Answer these questions to find out!</h4>
       <hr>
-      <p class="animalQuestions">What is your favourite colour?</p>
-      <!-- Radio buttons for mini quiz selection-->
-      <label class="btnQuestion"><input type="radio" name="colour" value="blue"> Blue</label><br>
-      <label class="btnQuestion"><input type="radio" name="colour" value="red"> Red</label><br>
-      <label class="btnQuestion"><input type="radio" name="colour" value="green"> Green</label><br>
-      <label class="btnQuestion"><input type="radio" name="colour" value="yellow"> Yellow</label><br>
-      <label class="btnQuestion"><input type="radio" name="colour" value="pink"> Pink</label><br>
+      <form id="whatAnimalAreYou">
+        <p class="animalQuestions">What is your favourite colour?</p>
+        <!-- Radio buttons for mini quiz selection-->
+        <label class="btnQuestion"><input type="radio" name="colour" value="blue"> Blue</label><br>
+        <label class="btnQuestion"><input type="radio" name="colour" value="red"> Red</label><br>
+        <label class="btnQuestion"><input type="radio" name="colour" value="green"> Green</label><br>
+        <label class="btnQuestion"><input type="radio" name="colour" value="yellow"> Yellow</label><br>
+        <label class="btnQuestion"><input type="radio" name="colour" value="pink"> Pink</label><br>
 
-      <p class="animalQuestions">What is your favourite passtime?</p>
-      <label class="btnQuestion"><input type="radio" name="passtime" value="beach"> Going to the beach</label><br>
-      <label class="btnQuestion"><input type="radio" name="passtime" value="forest"> Going to a forest</label><br>
-      <label class="btnQuestion"><input type="radio" name="passtime" value="games"> Playing videogames</label><br>
-      <label class="btnQuestion"><input type="radio" name="passtime" value="book"> Reading a book</label><br>
-      <label class="btnQuestion"><input type="radio" name="passtime" value="code"> Coding something new</label><br>
+        <p class="animalQuestions">What is your favourite passtime?</p>
+        <label class="btnQuestion"><input type="radio" name="passtime" value="beach"> Going to the beach</label><br>
+        <label class="btnQuestion"><input type="radio" name="passtime" value="forest"> Going to a forest</label><br>
+        <label class="btnQuestion"><input type="radio" name="passtime" value="games"> Playing videogames</label><br>
+        <label class="btnQuestion"><input type="radio" name="passtime" value="book"> Reading a book</label><br>
+        <label class="btnQuestion"><input type="radio" name="passtime" value="code"> Coding something new</label><br>
+      </form>
       <hr>
       <!--buttons to run JavaScript-->
       <button id="whatAnimals" onclick="whatAnimal()">Find out my animal!</button>
@@ -122,11 +124,11 @@
     <div id="pollution">
       <div class="container">
         <div class="row">
-         <div class="col"><img src="Images/seapollution.jpg" alt="Photo by Lucien Wanda from Pexels: https://www.pexels.com/photo/piles-of-garbage-by-the-shore-2827735/"></div>
-         <div class="col"><img src="Images/PortPollute.jpg" alt="https://unsplash.com/photos/blue-and-white-boat-on-water-under-white-clouds-and-blue-sky-during-daytime-dpQEOIoxeWg"></div>
+         <div class="col"><img src="Images/seapollution.jpg" class="img-fluid" alt="Photo by Lucien Wanda from Pexels: https://www.pexels.com/photo/piles-of-garbage-by-the-shore-2827735/"></div>
+         <div class="col"><img src="Images/PortPollute.jpg" class="img-fluid" alt="https://unsplash.com/photos/blue-and-white-boat-on-water-under-white-clouds-and-blue-sky-during-daytime-dpQEOIoxeWg"></div>
         <div class="w-100"></div>
-          <div class="col"><img src="Images/PlasticInFish.jpg" alt="https://unsplash.com/photos/person-in-white-gloves-holding-red-tomato-fruit-40o8lXsMlcU"></div>
-          <div class="col"><img src="Images/PlasticWater.jpg" alt="https://unsplash.com/photos/white-and-brown-duck-on-water-betJpW6fuoY"></div>
+          <div class="col"><img src="Images/PlasticInFish.jpg" class="img-fluid" alt="https://unsplash.com/photos/person-in-white-gloves-holding-red-tomato-fruit-40o8lXsMlcU"></div>
+          <div class="col"><img src="Images/PlasticWater.jpg" class="img-fluid" alt="https://unsplash.com/photos/white-and-brown-duck-on-water-betJpW6fuoY"></div>
         </div>
       </div>
     </div>

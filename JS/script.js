@@ -72,7 +72,7 @@ function showTip() {
   /*show div containing tip*/
   document.getElementById("plasticTip").style.display = "block";
 
-  /*array of contants (tips for plastic sustainibility)*/
+  /*array of constants (tips for plastic sustainibility)*/
   const plasticTips = [
     "Use a reusable water bottle or coffee mug",
     "Reuse shopping bags, invest in a tote bag or any other reusable bag",
@@ -81,6 +81,8 @@ function showTip() {
     "Recycle correctly",
     "Upcycle by turning old containers into something new",
     "Purchase products with plastic free wrapping where possible",
+    "Buy products second hand",
+    "Buy in bulk where possible"
   ];
 
   /*choose a random fact and assign it to randomTip*/
@@ -115,29 +117,23 @@ function whatAnimal() {
     myAnimal.innerHTML = "Please answer both of the questions and try again";
     return; //exit funtion early if no answers selected
   }
-
+  //set Colour/passtimeSelected to the value of each selected
   const colourSelected = colour.value;
   const passtimeSelected = passtime.value;
-  let resultText = ""; //maybe change name
+  let resultText = ""; //create place to store result. "let" instead of const to allow it to change
 
-  if (colourSelected === "blue" && passtimeSelected === "beach") {
-    resultText =
-      "<strong>You are a Dolphin!</strong><br>Dolphins are friendly creatures but they risk entrapment in nets!";
-  } else if (colourSelected === "red" && passtimeSelected === "forest") {
-    resultText =
-      "<strong>You are an Octopus!</strong><br>Smart creatures with three hearts, but are vulnerable to habitat destruction";
-  } else if (colourSelected === "green" && passtimeSelected === "book") {
-    resultText =
-      "<strong>You are Coral!</strong><br>Pretty and colourful, Corals are being bleached by acidic waters!";
-  } else if (colourSelected === "yellow" && passtimeSelected === "games") {
-    resultText =
-      "<strong>You are a Pufferfish!</strong><br> Puffy and spikey, but affected by plastic and toxic waste in the oceans.";
-  } else if (colourSelected === "pink" && passtimeSelected === "code") {
-    resultText =
-      "<strong>You are a Shrimp!</strong><br>Small creatures that help keep the ocean clean, they're suffering in warmer waters";
+  if (colourSelected === "blue" && (passtimeSelected === "beach" || passtimeSelected ==="forest")) {
+    resultText = "<strong>You are a Dolphin!</strong><br>Dolphins are friendly creatures but they are at risk to entrapment in nets!";
+  } else if (colourSelected === "red" && (passtimeSelected === "forest" || passtimeSelected ==="book")) {
+    resultText = "<strong>You are an Octopus!</strong><br>Smart creatures with three hearts, but are vulnerable to habitat destruction";
+  } else if (colourSelected === "green" && (passtimeSelected === "book" || passtimeSelected ==="games")) {
+    resultText = "<strong>You are Coral!</strong><br>Pretty and colourful, Corals are being bleached by acidic waters!";
+  } else if (colourSelected === "yellow" && (passtimeSelected === "games" || passtimeSelected ==="code")) {
+    resultText = "<strong>You are a Pufferfish!</strong><br> Puffy and spikey, but affected by plastic and toxic waste in the oceans.";
+  } else if (colourSelected === "pink" && (passtimeSelected === "code" || passtimeSelected ==="beach")) {
+    resultText = "<strong>You are a Shrimp!</strong><br>Small creatures that help keep the ocean clean, they're suffering in warmer waters";
   } else {
-    resultText =
-      "<strong>You are a Fish!</strong><br>They just keep swimming, but they face threats from microplastics and overfishing";
+    resultText = "<strong>You are a Fish!</strong><br>They just keep swimming, but they face threats from microplastics and overfishing";
   }
 
   myAnimal.innerHTML = resultText;
@@ -148,5 +144,7 @@ function resetAnimal() {
   document.getElementById("animalResult").innerHTML = "";
   /*hiding the div containing the empty tip*/
   document.getElementById("animalResult").style.display = "none";
+  /*clear radio button selections when reset clicked */
+  document.getElementById("whatAnimalAreYou").reset();
 }
 //Tara JS Page 3 end
