@@ -148,3 +148,19 @@ function resetAnimal() {
   document.getElementById("whatAnimalAreYou").reset();
 }
 //Tara JS Page 3 end
+
+//ryan white JS index page
+function getUser(){
+const user=prompt("Please enter your name");
+const email=prompt("Please enter your email");
+
+if(user && email){
+  //the message
+  const message='Welcome <strong>' + user + '</strong>, a newsletter will be sent to your email: <strong>'+email+'</strong>.'
+  //getting the message
+  document.getElementById("greet").innerHTML=message;
+}
+else{
+  document.getElementById("greet").innerHTML="Invalid details provided.";
+}
+}
