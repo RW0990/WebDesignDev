@@ -66,6 +66,11 @@ function showMeMessage() {
   document.getElementById("motivationalMessage").innerText = message[random];
 }
 
+function sendForm(event) {
+  event.preventDefault(); 
+  alert("Francesco will send you a message shortly");
+}
+
 //Tara JS page 4
 
 function showTip() {
@@ -164,3 +169,5 @@ else{
   document.getElementById("greet").innerHTML="Invalid details provided.";
 }
 }
+
+
