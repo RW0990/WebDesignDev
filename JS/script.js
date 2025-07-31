@@ -199,4 +199,18 @@ else{
 }
 }
 
+//ryan white JS on page 2
+    function fact(){
+   
+  var para = document.getElementById('para');
+      //hides and shows fact when clicked
+  if(para.style.display ==='none'){
+    para.style.display = 'block';
+  }
+  else{
+    //doesnt show if not clicked
+    para.style.display = 'none';
+  }
+} 
+
 
