@@ -104,6 +104,35 @@ function resetTip() {
   /*ramdomising the tip again after reset to avoid duplicate tips */
   var randomTip = Math.floor(Math.random() * plasticTips.length);
 }
+/*FORM*/ 
+function openForm() {
+  /*show form*/
+  document.getElementById("tarasForm").style.display = "block";
+  /*hide contact me button when form open*/
+  document.getElementById("openButton").style.display = "none";
+}
+  
+function closeForm() {
+  /*hide form*/
+  document.getElementById("tarasForm").style.display = "none";
+  /*re-show contact me button*/
+  document.getElementById("openButton").style.display = "block";
+  /*reset fields when form closed*/
+  document.getElementById("tarasForm").reset();
+}
+
+function taraForm(event) {
+  /*prevent refresh on submission*/
+  event.preventDefault();
+  /* alert when details submitted*/
+  alert("Thank you for contacting Tara! Your form has been submitted and we will be in contact shortly");
+  /*close form after submission*/
+  document.getElementById("tarasForm").style.display = "none";
+   /*show contact button again after submission*/
+  document.getElementById("openButton").style.display = "block";
+   /*reset fields after submission*/
+  document.getElementById("tarasForm").reset();
+}
 
 //Tara JS Page 4 end.
 
