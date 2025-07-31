@@ -207,6 +207,11 @@ else{
   if(para.style.display ==='none'){
     para.style.display = 'block';
   }
+    const para = document.getElementById('para1');
+      //hides and shows fact when clicked
+  if(para.style.display ==='none'){
+    para.style.display = 'block';
+  }
   else{
     //doesnt show if not clicked
     para.style.display = 'none';
