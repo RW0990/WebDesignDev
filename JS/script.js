@@ -202,7 +202,7 @@ else{
 //ryan white JS on page 2
     function fact(){
    
-  var para = document.getElementById('para');
+  const para = document.getElementById('para');
       //hides and shows fact when clicked
   if(para.style.display ==='none'){
     para.style.display = 'block';
