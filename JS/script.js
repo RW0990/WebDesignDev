@@ -201,18 +201,12 @@ else{
 
 //ryan white JS on page 2
     function fact(){
-   
+   //getting element
   const para = document.getElementById('para');
-      //hides and shows fact when clicked
+      //hides and shows facts when clicked
   if(para.style.display ==='none'){
     para.style.display = 'block';
-  }
-    const para = document.getElementById('para1');
-      //hides and shows fact when clicked
-  if(para.style.display ==='none'){
-    para.style.display = 'block';
-  }
-  else{
+  }else{
     //doesnt show if not clicked
     para.style.display = 'none';
   }
