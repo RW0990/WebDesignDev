@@ -508,6 +508,6 @@ input[name="message"] {
   padding:30px;
   border: 2px gray;
   display: none;
-  font-family: Arial;
+  font-family: "Barlow Condensed", sans-serif;
   text-align: center;
 }
