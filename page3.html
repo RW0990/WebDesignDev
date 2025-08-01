@@ -27,7 +27,7 @@
   <body>
     <h1>Life Below Water - Water and Pollution</h1>
     <div class="navbar">
-      <ul><!--Nav bar-->
+      <ul><!--Nav bar made from un ordered list and links-->
         <li><a href="index.html">Home</a></li>
         <li><a href="page2.html">Causes</a></li>
         <li><a class="active" href="page3.html">Water</a></li>
@@ -47,40 +47,40 @@
     </p>
    
     <!-- Bootstrap accordion -->
-    <div class="marineLife">
-      <div class="accordion" id="accordionExample">
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+    <div class="marineLife"> <!-- entire div containing accordion-->
+      <div class="accordion" id="accordionExample"> <!-- start of accordion -->
+        <div class="accordion-item"> <!-- section for Marine animals-->
+          <h2 class="accordion-header"> <!-- Header, main part that says "marine animals" and contains drop down button-->
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne"> <!-- drop down arrow button and tells the browser its a collapsable -->
               <strong>MARINE ANIMALS</strong>
             </button>
           </h2>
-          <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
+          <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample"> <!--this area expands to reveal content when drop down buttin is clicked-->
+            <div class="accordion-body"> <!-- main content that appears when the secion is dropped down-->
               Marine animals are affected by ocean pollution in many ways. There is plastic of all shapes and sizes in the ocean. Marine animals can get trapped in larger plastics, maybe get tangled in a net or consume microplastics which may contain toxins. 
             </div>
           </div>
         </div>
-        <div class="accordion-item">
+        <div class="accordion-item"> <!-- new section for coral reefs-->
           <h2 class="accordion-header">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-              <strong>CORAL REEFS</strong>
+              <strong>CORAL REEFS</strong> <!-- header -->
             </button>
           </h2>
           <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
+            <div class="accordion-body"><!-- main content / body-->
               According to a recent study at Cornell University in New York, most of the surveyed coral reefs had plastic pollution of some kind. This increased the likelihood of coral reefs becoming diseased. Healthy coral reefs typically would have a 4% chance of being diseased while polluted coral reefs had a much higher risk of 80% or more.
             </div>
           </div>
         </div>
-        <div class="accordion-item">
+        <div class="accordion-item"> <!-- new section for bacteria-->
           <h2 class="accordion-header">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-              <strong>OXYGEN PRODUCING BACTERIA</strong>
+              <strong>OXYGEN PRODUCING BACTERIA</strong><!-- header -->
             </button>
           </h2>
           <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
+            <div class="accordion-body"><!-- main content / body-->
               Toxic chemicals can leach from plastics and microplastics polluting the water. This is extremely harmful to oxygen producing bacteria. These bacteria are partially responsible for maintaining oxygen levels in the water which is critical for the entire ecosystem.
             </div>
           </div>
@@ -95,7 +95,9 @@
       <h3>What ocean animal are you?</h3>
       <h4>Answer these questions to find out!</h4>
       <hr>
+      <!-- form creation-->
       <form id="whatAnimalAreYou">
+        <!--text box with class for styling questions-->
         <p class="animalQuestions">What is your favourite colour?</p>
         <!-- Radio buttons for mini quiz selection-->
         <label class="btnQuestion"><input type="radio" name="colour" value="blue"> Blue</label><br>
@@ -111,6 +113,7 @@
         <label class="btnQuestion"><input type="radio" name="passtime" value="book"> Reading a book</label><br>
         <label class="btnQuestion"><input type="radio" name="passtime" value="code"> Coding something new</label><br>
       </form>
+      <!--draws a segment line-->
       <hr>
       <!--buttons to run JavaScript-->
       <button id="whatAnimals" onclick="whatAnimal()">Find out my animal!</button>
@@ -118,17 +121,18 @@
       <hr>
       <!--div to store result-->
       <div id="animalResult"></div>
-      
     </div>
+    
     <!--bootstrap grid for photos-->
+    <!-- Wrapped in div for styling -->
     <div id="pollution">
-      <div class="container">
-        <div class="row">
-         <div class="col"><img src="Images/seapollution.jpg" class="img-fluid" alt="Photo by Lucien Wanda from Pexels: https://www.pexels.com/photo/piles-of-garbage-by-the-shore-2827735/"></div>
-         <div class="col"><img src="Images/PortPollute.jpg" class="img-fluid" alt="https://unsplash.com/photos/blue-and-white-boat-on-water-under-white-clouds-and-blue-sky-during-daytime-dpQEOIoxeWg"></div>
-        <div class="w-100"></div>
-          <div class="col"><img src="Images/PlasticInFish.jpg" class="img-fluid" alt="https://unsplash.com/photos/person-in-white-gloves-holding-red-tomato-fruit-40o8lXsMlcU"></div>
-          <div class="col"><img src="Images/PlasticWater.jpg" class="img-fluid" alt="https://unsplash.com/photos/white-and-brown-duck-on-water-betJpW6fuoY"></div>
+      <div class="container"> <!-- section for all 4 photos-->
+        <div class="row"> <!--creates row-->
+          <div class="col"><img src="Images/seapollution.jpg" class="img-fluid" alt="Photo by Lucien Wanda from Pexels: https://www.pexels.com/photo/piles-of-garbage-by-the-shore-2827735/"></div> <!-- photo coloumn-->
+          <div class="col"><img src="Images/PortPollute.jpg" class="img-fluid" alt="https://unsplash.com/photos/blue-and-white-boat-on-water-under-white-clouds-and-blue-sky-during-daytime-dpQEOIoxeWg"></div><!-- photo coloumn-->
+          <div class="w-100"></div><!--makes content width 100%-->
+          <div class="col"><img src="Images/PlasticInFish.jpg" class="img-fluid" alt="https://unsplash.com/photos/person-in-white-gloves-holding-red-tomato-fruit-40o8lXsMlcU"></div><!-- photo coloumn-->
+          <div class="col"><img src="Images/PlasticWater.jpg" class="img-fluid" alt="https://unsplash.com/photos/white-and-brown-duck-on-water-betJpW6fuoY"></div><!-- photo coloumn-->
         </div>
       </div>
     </div>
