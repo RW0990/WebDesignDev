@@ -47,14 +47,16 @@
         <br />
         Please enter your name
       </p>
-      
+      <!-- Form to collect name from user  -->
       <form onsubmit="showQuiz(event)">
+	      
         <label id="nameForm" for="name">Name:</label>
         <input type="text" id="name" name="name" required />
         <br />
         <button type="submit">Start the quiz</button>
       </form>
     </div>
+	 <!-- Quiz Francesco table  -->
     <div id="quiz">
       <table>
         <tr>
@@ -114,7 +116,7 @@
           </td>
         </tr>
       </table>
-
+	<!-- Button that show the result and change the CSS of the table-->
       <button onclick="valueQuiz()">Click here for value</button>
     </div>
     <div id="quizResult">
