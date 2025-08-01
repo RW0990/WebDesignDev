@@ -1,4 +1,5 @@
 //ryan white JS index page
+//creating the function to create a javascript prompt box
 function getUser(){
 const user=prompt("Please enter your name");
 const email=prompt("Please enter your email");
@@ -16,8 +17,8 @@ else{
 //--------------------------------------------------------------------------------------------------------------------------------
 
 //ryan white JS on page 2
+  //creating a pop up button
     function fact(){
-   //getting element
   const para = document.getElementById('para');
       //hides and shows facts when clicked
   if(para.style.display ==='none'){
